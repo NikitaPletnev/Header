@@ -1,0 +1,166 @@
+html body {
+	font-family: 'Roboto';
+}
+
+/*Стили верхнего контейнера с меню*/
+.container{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.header-item{
+	height: 100px;
+	text-align: center;
+	padding-top: 30px;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+.header-item__link{
+	text-decoration: none;
+	color: black;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+/*Стили элементов меню*/
+.home{
+	background: #8B4513;
+	transition: background 0.5s linear;
+}
+.home:hover{
+background: #F4A460 ;
+}
+
+.settings{
+	background: #8B008B;
+	transition: background 0.5s linear;
+}
+
+.settings:hover{
+	background: #FF00FF;
+}
+
+.faq{
+	background:#008080 ;
+	transition: background 0.5s linear;
+}
+
+.faq:hover{
+	background:#00FFFF;
+}
+
+.slide{
+	background:#006400 ;
+	transition: background 0.5s linear;
+}
+
+.slide:hover{
+	background: #00FF00;
+}
+
+/*Стили всплывающего окна*/
+.slider-popup-container{
+	position: absolute;
+	z-index: 999;
+	height: 300px;
+	width: 24%;
+	left: -1000px;
+
+}
+
+.slider-popup-row{
+	width: 100%;
+	height: 100%;
+    background: #808080;
+	animation: 0.5s linear 0s normal none infinite running rot;
+  -webkit-animation: 0.5s linear 0s normal none infinite running rot;
+}
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+}
+
+/*Стили элементов всплывающего окна*/
+.slider-popup-items{
+	display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2vw;
+}
+
+.load{
+	display: none;
+	width: 0;
+	height: 0;
+	padding-top: 200px;
+	margin:0 auto;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 80px solid #2F4F4F;
+	animation: 0.5s linear 0s normal none infinite running rot;
+  -webkit-animation: 0.5s linear 0s normal none infinite running rot;
+}
+
+.slider-popup-items__item{
+	height: 75px;
+	box-sizing: border-box;
+	text-align: center;
+	padding-top:20px; 
+}
+
+.slider-popup-items__item a{
+	text-decoration: none;
+	color:black;
+	font-size: 18px;
+	font-weight: bold;
+} 
+
+.item_1{
+	display: none;
+	background: #8B4513;
+	transition: background 0.5s linear;
+}
+.item_1:hover{
+  background: #CD853F;
+}
+
+.item_2{
+	display: none;
+	background: #A0522D;
+	transition: background 0.5s linear;
+}
+.item_2:hover{
+  background: #D2691E;
+}
+
+.item_3{
+	display: none;
+	background: #A52A2A;
+	transition: background 0.5s linear;
+}
+.item_3:hover{
+  background: #F08080;
+}
+
+.item_4{
+	display: none;
+	background: #800000;
+	transition: background 0.5s linear;
+}
+.item_4:hover{
+  background: #DC143C;
+}
